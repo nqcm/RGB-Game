@@ -47,11 +47,13 @@ resetButton.addEventListener("click", function(){
   pickedColor = pickRandomColor();
   //chand colorDisplay to match picked color
   colorDisplay.textContent = pickedColor;
+  this.textContent = "New colors";
+  messageDisplay.textContent ="";
   //change colors of squares
   for (var i=0; i<squares.length; i++){
     squares[i].style.backgroundColor = colors[i];
   }
-  headerDisplay.style.backgroundColor = "#232323";
+  headerDisplay.style.backgroundColor = "steelblue";
 });
 
 for (var i = 0; i < squares.length; i++) {
